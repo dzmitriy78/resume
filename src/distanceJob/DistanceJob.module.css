@@ -1,0 +1,17 @@
+.block {
+    height: 30vh;
+    background-color: khaki;
+}
+.DJContainer{
+    flex-direction: column;
+    justify-content:space-around;
+ }
+.btn {
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    align-self: auto;
+}

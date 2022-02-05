@@ -1,0 +1,18 @@
+.myJobsBlock {
+    height: 100vh;
+    background-color: darkseagreen;
+}
+.myJobsContainer {
+    flex-direction: column;
+    justify-content:flex-start;
+}
+.title {
+background-color: aliceblue;
+}
+.jobs {
+    border: 1px #282c34 solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
