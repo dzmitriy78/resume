@@ -12,9 +12,9 @@ const Skills = () => {
             <div className={`${stylesContainer.container} ${styles.skillsContainer}`}>
                 <h2 className={styles.title}>Skills</h2>
                 <div className={styles.skills}>
-                    <Skill title = {"JS"} description={descriptionJS} />
-                    <Skill title = {"React"} description={descriptionReact}/>
-                    <Skill title = {"CSS"} description={descriptionCSS}/>
+                    <Skill title={"JS"} description={descriptionJS}/>
+                    <Skill title={"React"} description={descriptionReact}/>
+                    <Skill title={"CSS"} description={descriptionCSS}/>
                 </div>
             </div>
         </div>

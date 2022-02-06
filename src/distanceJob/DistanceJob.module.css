@@ -2,10 +2,12 @@
     height: 30vh;
     background-color: khaki;
 }
-.DJContainer{
+
+.DJContainer {
     flex-direction: column;
-    justify-content:space-around;
- }
+    justify-content: space-around;
+}
+
 .btn {
     cursor: pointer;
     background-color: #555;

@@ -3,10 +3,10 @@ import styles from "./Jobs.module.css"
 
 interface JobsPropsType {
     title: string
-    description:string
+    description: string
 }
 
-const Jobs = (props:JobsPropsType) => {
+const Jobs = (props: JobsPropsType) => {
     return (
         <div className={styles.job}>
             <div className={styles.icon}>
@@ -17,7 +17,7 @@ const Jobs = (props:JobsPropsType) => {
             <span className={styles.jobDescription}>
                 {props.description}
             </span>
-    </div>
+        </div>
     );
 };
 

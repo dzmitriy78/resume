@@ -6,11 +6,13 @@
     align-items: center;
     text-align: center;
 }
+
 .icon {
     width: 80px;
     height: 80px;
     background-color: antiquewhite;
 }
-.skillDescription {
 
+.skillDescription {
+    border: black 1px solid;
 }

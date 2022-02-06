@@ -6,8 +6,8 @@
     align-items: center;
     text-align: center;
 }
-.icon {
 
+.icon {
     height: 150px;
     background-color: #9b7138;
     align-items: center;
@@ -15,14 +15,17 @@
     position: relative;
     width: 50%;
 }
+
 .icon img {
     width: 100%;
     height: auto;
 }
+
 .jobDescription {
     background-color: #cc7d60;
     margin: 0 25px 0 25px;
 }
+
 .button {
     cursor: pointer;
     position: absolute;
@@ -37,6 +40,7 @@
     border: none;
     border-radius: 5px;
 }
+
 .button:hover {
     background-color: black;
 }

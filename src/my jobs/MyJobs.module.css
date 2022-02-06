@@ -2,13 +2,16 @@
     height: 100vh;
     background-color: darkseagreen;
 }
+
 .myJobsContainer {
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
+
 .title {
-background-color: aliceblue;
+    background-color: aliceblue;
 }
+
 .jobs {
     border: 1px #282c34 solid;
     width: 100%;

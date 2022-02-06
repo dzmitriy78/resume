@@ -6,10 +6,9 @@ const DistanceJob = () => {
     return (
         <div className={styles.block}>
             <div className={`${stylesContainer.container} ${styles.DJContainer}`}>
-
-                    <h2>Рассматриваю варианты удаленной работы</h2>
-                    <button className={styles.btn}>Нанять меня</button>
-                </div>
+                <h2>Рассматриваю варианты удаленной работы</h2>
+                <button className={styles.btn}>Нанять меня</button>
+            </div>
 
         </div>
     );
