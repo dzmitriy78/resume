@@ -9,7 +9,9 @@ const MyJobs = () => {
     return (
         <div className={styles.myJobsBlock}>
             <div className={`${stylesContainer.container} ${styles.myJobsContainer}`}>
-                <h2 className={styles.title}>Jobs</h2>
+                <div className={styles.title}>
+                    <h2 >jobs</h2>
+                </div>
                 <div className={styles.jobs}>
                     <Jobs title={"social network"} description={descriptionSN}/>
                     <Jobs title={"another job"} description={descriptionAJ}/>

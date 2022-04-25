@@ -3,4 +3,9 @@
     width: 300px;
     display: flex;
     justify-content: space-between;
+
+}
+.item {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }

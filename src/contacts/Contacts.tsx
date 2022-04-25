@@ -8,11 +8,12 @@ const Contacts = () => {
             <div className={`${stylesContainer.container} ${styles.contactsContainer}`}>
                 <h2 className={styles.title}>Contacts</h2>
                 <form className={styles.form}>
-                    <input className={styles.input}/><br/>
-                    <input className={styles.input}/><br/>
+                    <input type={"text"} className={styles.input}/><br/>
+                    <input type={"text"} className={styles.input}/><br/>
                     <textarea className={styles.textarea}/>
+                    <button type={"submit"} className={styles.button}>Отправить</button>
                 </form>
-                <button className={styles.button}>Отправить</button>
+
             </div>
         </div>
     );

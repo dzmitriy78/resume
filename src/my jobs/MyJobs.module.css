@@ -1,15 +1,21 @@
 .myJobsBlock {
-    height: 100vh;
-    background-color: darkseagreen;
+    background-color: #343a40;
 }
 
 .myJobsContainer {
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .title {
-    background-color: aliceblue;
+    margin-bottom: 30px;
+}
+.title h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
 }
 
 .jobs {
@@ -18,4 +24,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 624px){
+    .jobs {
+        justify-content: center;
+    }
 }

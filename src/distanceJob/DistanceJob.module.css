@@ -1,11 +1,15 @@
 .block {
     height: 30vh;
-    background-color: khaki;
+    background-color: #212529;
 }
 
 .DJContainer {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.title {
+    background-color: #aaa7a7;
 }
 
 .btn {
