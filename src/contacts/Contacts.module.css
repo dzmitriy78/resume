@@ -7,10 +7,6 @@
     justify-content: flex-start;
 }
 
-.title {
-    background-color: #c5a1a1;
-}
-
 .form {
     width: 50%;
     display: flex;

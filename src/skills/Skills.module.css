@@ -16,13 +16,6 @@
     flex-wrap: wrap;
 }
 
-.title {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    text-transform: capitalize;
-    color: white;
-}
-
 @media screen and (max-width: 624px){
     .skills {
         justify-content: center;

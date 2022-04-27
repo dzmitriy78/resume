@@ -8,25 +8,18 @@
     flex-wrap: nowrap;
 }
 
-.title {
-    margin-bottom: 30px;
-}
-.title h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    text-transform: capitalize;
-    color: white;
-}
-
 .jobs {
     border: 1px #282c34 solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    align-items: flex-start;
 }
 
-@media screen and (max-width: 624px){
+@media screen and (max-width: 624px) {
     .jobs {
         justify-content: center;
     }

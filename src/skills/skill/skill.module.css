@@ -15,4 +15,17 @@
 
 .skillDescription {
     border: black 1px solid;
+    font-family: 'Gotham Pro Medium Italic', sans-serif;
+    font-size: 16px;
+}
+
+
+@font-face {
+    font-family: 'Gotham Pro Medium Italic';
+    src: url('../../assets/fonts/GothamPro/GothamPro-MediumItalic.eot');
+    src: url('../../assets/fonts/GothamPro/GothamPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/GothamPro/GothamPro-MediumItalic.woff') format('woff'),
+    url('../../assets/fonts/GothamPro/GothamPro-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

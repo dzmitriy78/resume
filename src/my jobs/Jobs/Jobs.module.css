@@ -1,6 +1,5 @@
 .job {
-    width: 250px;
-    background-color: #b98a8a;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,27 +7,32 @@
 }
 
 .icon {
-    height: 150px;
-    background-color: #9b7138;
+    height: 300px;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 50%;
+    color: white;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
-.icon img {
-    width: 100%;
-    height: auto;
+.jobsTitle {
+    color: green;
 }
 
 .jobDescription {
-    background-color: #cc7d60;
     margin: 0 25px 0 25px;
+    color: white;
+    opacity: 50%;
+    font-family: 'Gotham Pro Medium Italic', sans-serif;
+    font-size: 16px;
 }
 
 .button {
     cursor: pointer;
     position: absolute;
+    margin-top: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -43,4 +47,13 @@
 
 .button:hover {
     background-color: black;
+}
+@font-face {
+    font-family: 'Gotham Pro Medium Italic';
+    src: url('../../assets/fonts/GothamPro/GothamPro-MediumItalic.eot');
+    src: url('../../assets/fonts/GothamPro/GothamPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/GothamPro/GothamPro-MediumItalic.woff') format('woff'),
+    url('../../assets/fonts/GothamPro/GothamPro-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
