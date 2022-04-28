@@ -1,16 +1,16 @@
 import React from 'react';
-import styles from "./MyJobs.module.css"
-import stylesContainer from "../common/styles/Container.module.css";
+import styles from "./MyJobs.module.scss"
+import stylesContainer from "../common/styles/Container.module.scss";
 import Jobs from "./Jobs/Jobs";
 import Title from "../common/components/title/Title";
-import project_2 from "../assets/icons/project-2.jpg";
+import socialNetwork from "../assets/icons/project-2.jpg";
 import project_1 from "../assets/icons/project-1.jpg"
 
 const MyJobs = () => {
     let descriptionSN = "Здесь будет описание работы по social network";
     let descriptionAJ = "Здесь будет описание работы по another job";
     let social = {
-        backgroundImage: `url(${project_2})`
+        backgroundImage: `url(${socialNetwork})`
     }
     let another = {
         backgroundImage: `url(${project_1})`

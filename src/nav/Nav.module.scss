@@ -1,0 +1,28 @@
+@import "../common/styles/sass/variables";
+
+.nav {
+  border: solid 1px $bgColor1;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    color: $textColor;
+    text-decoration: none;
+    font-family: 'Gotham Pro Regular', sans-serif
+  }
+
+  .item:hover {
+    color: $primaryColor;
+  }
+}
+
+@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url('../assets/fonts/GothamPro/GothamPro.eot');
+  src: url('../assets/fonts/GothamPro/GothamPro.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/GothamPro/GothamPro-Medium.woff') format('woff'),
+  url('../assets/fonts/GothamPro/GothamPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

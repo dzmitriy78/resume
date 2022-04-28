@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from "./DistanceJob.module.css"
-import stylesContainer from "./../common/styles/Container.module.css"
+import styles from "./DistanceJob.module.scss"
+import stylesContainer from "../common/styles/Container.module.scss"
 
 const DistanceJob = () => {
     return (

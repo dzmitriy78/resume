@@ -1,0 +1,44 @@
+@import "../common/styles/sass/variables";
+
+.block {
+  height: 30vh;
+  background-color: $bgColor1;
+
+  .DJContainer {
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      font-family: 'Sochi2014 Bold', sans-serif;
+      color: $textColor;
+      font-size: 30px;
+      letter-spacing: 4px;
+    }
+
+    .btn {
+      cursor: pointer;
+      background-color: $bgColor2;
+      color: $textColor;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      align-self: auto;
+      padding: 12px 24px;
+    }
+
+    .btn:hover {
+      background-color: $primaryColor;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'Sochi2014 Bold';
+  src: url('../assets/fonts/Sochi2014/Sochi2014-Bold.eot');
+  src: local('../common/fonts/Sochi2014 Bold'),
+  url('../assets/fonts/Sochi2014/Sochi2014-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Sochi2014/Sochi2014-Bold.woff') format('woff'),
+  url('../assets/fonts/Sochi2014/Sochi2014-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

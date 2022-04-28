@@ -1,0 +1,30 @@
+@import "../common/styles/sass/variables";
+
+.myJobsBlock {
+  background-color: $bgColor2;
+
+  .myJobsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    .jobs {
+      border: 1px $bgColor1 solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 25px;
+      align-items: flex-start;
+      @media screen and (max-width: 624px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+
+
+

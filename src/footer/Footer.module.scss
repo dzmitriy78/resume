@@ -1,0 +1,52 @@
+@import "../common/styles/sass/variables";
+
+.footerBlock {
+  background-color: $bgColor1;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      color: $textColor;
+      font-size: 14px;
+    }
+
+    .footer {
+      background-color: $bgColor2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: $textColor;
+
+      .var1 {
+        background-color: $bgColor1;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+      }
+
+      .var2 {
+        background-color: $bgColor2;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+      }
+    }
+
+    .end {
+      margin-top: 20px;
+      background-color: $bgColor2;
+      font-size: 14px;
+      font-weight: bold;
+      color: $textColor;
+    }
+  }
+}
