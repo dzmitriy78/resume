@@ -6,7 +6,9 @@
 
   .DJContainer {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    position: relative;
+
 
     .title {
       font-family: 'Sochi2014 Bold', sans-serif;
@@ -16,14 +18,18 @@
     }
 
     .btn {
+      position: absolute;
       cursor: pointer;
       background-color: $bgColor2;
       color: $textColor;
       font-size: 16px;
-      border: none;
+      border: 1px solid $primaryColor;
       border-radius: 5px;
       align-self: auto;
       padding: 12px 24px;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .btn:hover {
