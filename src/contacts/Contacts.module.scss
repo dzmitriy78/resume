@@ -8,7 +8,7 @@
     justify-content: flex-start;
 
     .form {
-      width: 50%;
+      width: 40%;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -23,7 +23,7 @@
 
       & textarea {
         padding: 3px;
-        height: 80px;
+        height: 100px;
       }
 
       .button {

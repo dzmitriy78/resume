@@ -1,53 +1,56 @@
+import {useFormik} from 'formik';
 import React from 'react';
 import styles from "./../../../contacts/Contacts.module.scss"
-import {ErrorMessage, Field, Form, Formik} from "formik";
 
-interface Values {
-    email: string
-    phone: string
-    message: string
-}
-
-interface Errors {
+type FormikErrorType = {
     email?: string
+    phone?: string
+    message?: string
 }
 
 const ContactsForm = () => {
-    return (
-        <Formik
-            initialValues={{email: "", phone: "", message: ""}}
-            validate={values => {
-                const errors: Errors = {};
-                if (!values.email) {
-                    errors.email = 'Required';
-                } else if (
-                    !/^[A-Z\d._%+-]+@[A-Z\d.-]+\.[A-Z]{2,}$/i.test(values.email)
-                ) {
-                    errors.email = 'Invalid email address';
-                }
-                return errors;
-            }}
-            onSubmit={async (values: Values) => {
-                await new Promise((r) => setTimeout(r, 500));
-                alert(JSON.stringify(values, null, 2));
-            }}
-        >
-            {() => (
-                <Form className={styles.form}>
-                    <Field className={styles.input} type={'text'} name={'email'} placeholder={'e-mail'}/>
-                    <div style={{color: "orange"}}>
-                        <ErrorMessage name="email" component="div"/>
-                    </div>
-                    <Field className={styles.input} type={'phone'} name={'phone'} placeholder={'phone'}/>
-                    <div style={{color: "orange"}}>
-                        <ErrorMessage name="phone" component="div"/>
-                    </div>
-                    <Field component={"textarea"} name={'message'} placeholder={'Insert your message'}/>
-                    <button type={'submit'} className={styles.button}>Отправить</button>
-                </Form>
-            )}
-        </Formik>
-    )
+
+    const formik = useFormik({
+        initialValues: {
+            email: "",
+            phone: "",
+            message: ""
+        },
+        validate: (values) => {
+            const errors: FormikErrorType = {};
+            if (!values.email) {
+                errors.email = 'Required';
+            } else if (!/^[A-Z\d._%+-]+@[A-Z\d.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+                errors.email = 'Invalid email address';
+            }
+            if ((values.phone.length < 6) || (!/[\d+-]/.test(values.phone))) {
+                errors.phone = 'Invalid phone number';
+            }
+            return errors;
+        },
+        onSubmit: (values) => {
+            alert(JSON.stringify(values))
+            formik.resetForm()
+        }
+    })
+    return <form className={styles.form} onSubmit={formik.handleSubmit}>
+        <input type='email'
+               placeholder={'e-mail'}
+               {...formik.getFieldProps("email")}
+        />
+        {formik.touched.email && formik.errors.email ?
+            <div style={{color: "orange"}}>{formik.errors.email}</div> : null}
+        <input type="tel"
+               placeholder={'phone'}
+               {...formik.getFieldProps("phone")}
+        />
+        {formik.touched.phone && formik.errors.phone ?
+            <div style={{color: "orange"}}>{formik.errors.phone}</div> : null}
+        <textarea placeholder={'Insert your message'}
+                  {...formik.getFieldProps("message")}
+        />
+        <button type={'submit'} className={styles.button}>Отправить</button>
+    </form>
 }
 
 export default ContactsForm;
