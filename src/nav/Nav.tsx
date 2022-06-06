@@ -5,11 +5,11 @@ import {NavLink} from "react-router-dom";
 const Nav = () => {
     return (
         <div className={style.nav}>
-            <NavLink className={style.item} to="/" >Главная</NavLink>
-            <NavLink className={style.item} to="/skills">Умения</NavLink>
-            <NavLink className={style.item} to="/projects">Проекты</NavLink>
-            <NavLink className={style.item} to="/distanceJob">Удаленная работа</NavLink>
-            <NavLink className={style.item} to="/contacts">Контакты</NavLink>
+            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/" >Главная</NavLink>
+            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/skills">Умения</NavLink>
+            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/projects">Проекты</NavLink>
+            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/distanceJob">Удаленная работа</NavLink>
+            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/contacts">Контакты</NavLink>
         </div>
     );
 };

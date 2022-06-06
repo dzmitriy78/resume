@@ -15,9 +15,11 @@
   .item:hover {
     color: $primaryColor;
   }
- /* .item.active {
+  .active {
     color: $primaryColor;
-  }*/
+    text-decoration: none;
+    font-family: 'Gotham Pro Regular', sans-serif
+  }
 }
 
 @font-face {
