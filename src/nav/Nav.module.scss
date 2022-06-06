@@ -2,7 +2,7 @@
 
 .nav {
   border: solid 1px $bgColor1;
-  width: 300px;
+  width: 500px;
   display: flex;
   justify-content: space-between;
 
@@ -15,6 +15,9 @@
   .item:hover {
     color: $primaryColor;
   }
+ /* .item.active {
+    color: $primaryColor;
+  }*/
 }
 
 @font-face {
