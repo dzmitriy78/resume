@@ -11,7 +11,7 @@
 
 
     .title {
-      font-family: 'Sochi2014 Bold', sans-serif;
+      font-family: $fontSecond;
       color: $textColor;
       font-size: 30px;
       letter-spacing: 4px;
@@ -36,15 +36,4 @@
       background-color: $primaryColor;
     }
   }
-}
-
-@font-face {
-  font-family: 'Sochi2014 Bold';
-  src: url('../assets/fonts/Sochi2014/Sochi2014-Bold.eot');
-  src: local('../common/fonts/Sochi2014 Bold'),
-  url('../assets/fonts/Sochi2014/Sochi2014-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../assets/fonts/Sochi2014/Sochi2014-Bold.woff') format('woff'),
-  url('../assets/fonts/Sochi2014/Sochi2014-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
 }

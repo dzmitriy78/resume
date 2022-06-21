@@ -3,13 +3,16 @@ import style from "./Nav.module.scss";
 import {NavLink} from "react-router-dom";
 
 const Nav = () => {
+
+    const setActive = ({isActive}:{isActive: boolean}): string => isActive ? style.active: style.item
+
     return (
         <div className={style.nav}>
-            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/" >Главная</NavLink>
-            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/skills">Умения</NavLink>
-            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/projects">Проекты</NavLink>
-            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/distanceJob">Удаленная работа</NavLink>
-            <NavLink className={({isActive}) => isActive ? style.active: style.item} to="/contacts">Контакты</NavLink>
+            <NavLink className={setActive} to="/" >Главная</NavLink>
+            <NavLink className={setActive} to="/skills">Умения</NavLink>
+            <NavLink className={setActive} to="/projects">Проекты</NavLink>
+            <NavLink className={setActive} to="/distanceJob">Удаленная работа</NavLink>
+            <NavLink className={setActive} to="/contacts">Контакты</NavLink>
         </div>
     );
 };

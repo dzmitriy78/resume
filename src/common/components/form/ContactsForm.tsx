@@ -23,7 +23,7 @@ const ContactsForm = () => {
             } else if (!/^[A-Z\d._%+-]+@[A-Z\d.-]+\.[A-Z]{2,}$/i.test(values.email)) {
                 errors.email = 'Invalid email address';
             }
-            if ((values.phone.length < 6) || (!/[\d+-]/.test(values.phone))) {
+            if ((values.phone.length) && (!/^\+\d+\(\d{2,}\)\d{6,}$/.test(values.phone))) {
                 errors.phone = 'Invalid phone number';
             }
             return errors;
@@ -40,10 +40,12 @@ const ContactsForm = () => {
         />
         {formik.touched.email && formik.errors.email ?
             <div style={{color: "orange"}}>{formik.errors.email}</div> : null}
+       <label >
         <input type="tel"
-               placeholder={'phone'}
+               placeholder={'phone: +___(___)_______'}
                {...formik.getFieldProps("phone")}
         />
+       </label>
         {formik.touched.phone && formik.errors.phone ?
             <div style={{color: "orange"}}>{formik.errors.phone}</div> : null}
         <textarea placeholder={'Insert your message'}

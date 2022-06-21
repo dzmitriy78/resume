@@ -9,7 +9,7 @@
   .item {
     color: $textColor;
     text-decoration: none;
-    font-family: 'Gotham Pro Regular', sans-serif
+    font-family: $fontRoot
   }
 
   .item:hover {
@@ -18,10 +18,11 @@
   .active {
     color: $primaryColor;
     text-decoration: none;
-    font-family: 'Gotham Pro Regular', sans-serif
+    font-family: $fontRoot
   }
 }
 
+/*
 @font-face {
   font-family: 'Gotham Pro Regular';
   src: url('../assets/fonts/GothamPro/GothamPro.eot');
@@ -30,4 +31,4 @@
   url('../assets/fonts/GothamPro/GothamPro-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+}*/

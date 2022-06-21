@@ -57,18 +57,8 @@
     margin: 0 25px 0 25px;
     color: $textColor;
     opacity: 50%;
-    font-family: 'Sochi2014-Medium', sans-serif;
+    font-family: $fontFour;
     font-size: 20px;
     letter-spacing: 1px;
   }
-}
-
-@font-face {
-  font-family: 'Sochi2014-Medium';
-  src: url('../../assets/fonts/Sochi2014/Sochi2014-Medium.eot'),
-  url('../../assets/fonts/Sochi2014/Sochi2014-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../../assets/fonts/Sochi2014/Sochi2014-Medium.woff') format('woff'),
-  url('../../assets/fonts/Sochi2014/Sochi2014-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
 }

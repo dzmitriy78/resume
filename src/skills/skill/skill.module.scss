@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 20px;
+  margin:  20px ;
 
   .icon {
     width: 80px;
@@ -21,18 +21,8 @@
 
   .skillDescription {
     border: $bgColor1 1px solid;
-    font-family: 'Sochi2014-Medium', sans-serif;
+    font-family: $fontFour;
     font-size: 20px;
     color: $textColor;
   }
-}
-
-@font-face {
-  font-family: 'Sochi2014-Medium';
-  src: url('../../assets/fonts/Sochi2014/Sochi2014-Medium.eot'),
-  url('../../assets/fonts/Sochi2014/Sochi2014-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../../assets/fonts/Sochi2014/Sochi2014-Medium.woff') format('woff'),
-  url('../../assets/fonts/Sochi2014/Sochi2014-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
 }

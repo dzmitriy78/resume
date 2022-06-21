@@ -8,6 +8,9 @@ import ReactI from "../assets/icons/react.png";
 import TSI from "../assets/icons/typescript.png";
 import ReduxI from "../assets/icons/redux.png";
 import CSSI from "../assets/icons/css.png";
+import HtmlI from "../assets/icons/html5.png";
+// @ts-ignore
+import Zoom from "react-reveal/Zoom";
 
 
 const Skills = () => {
@@ -15,6 +18,7 @@ const Skills = () => {
     let descriptionCSS = "Здесь будет описание скилла по CSS";
     let descriptionReact = "Здесь будет описание скилла по React";
     let descriptionRedux = "Здесь будет описание скилла по Redux";
+    let descriptionHTML = "Здесь будет описание скилла по HTML";
     let descriptionTS = "Здесь будет описание скилла по TS";
 
     let JSIcon = {
@@ -29,22 +33,27 @@ const Skills = () => {
     let ReduxIcon = {
         backgroundImage: `url(${ReduxI})`
     }
+    let HTMLIcon = {
+        backgroundImage: `url(${HtmlI})`
+    }
     let CSSIcon = {
         backgroundImage: `url(${CSSI})`
     }
 
-
     return (
         <div className={styles.skillsBlock}>
             <div className={`${stylesContainer.container} ${styles.skillsContainer}`}>
+                <Zoom>
                 <Title title ={"Skills"}/>
                 <div className={styles.skills}>
                     <Skill title={"Javascript"}  description={descriptionJS} style = {JSIcon}/>
                     <Skill title={"React"} description={descriptionReact} style = {ReactIcon}/>
-                    <Skill title={"Redux"} description={descriptionRedux} style = {ReduxIcon}/>
+                    <Skill title={"Redux / Redux Toolkit"} description={descriptionRedux} style = {ReduxIcon}/>
+                    <Skill title={"HTML"} description={descriptionHTML} style = {HTMLIcon}/>
                     <Skill title={"Typescript"} description={descriptionTS} style = {TSIcon}/>
-                    <Skill title={"CSS"} description={descriptionCSS} style = {CSSIcon}/>
+                    <Skill title={"CSS / SASS"} description={descriptionCSS} style = {CSSIcon}/>
                 </div>
+                    </Zoom>
             </div>
         </div>
     );
