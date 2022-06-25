@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from "./DistanceJob.module.scss"
 import stylesContainer from "../common/styles/Container.module.scss"
-// @ts-ignore
-import Fade from 'react-reveal/Fade';
+const Fade = require("react-reveal/Fade");
 
 const DistanceJob = () => {
     return (

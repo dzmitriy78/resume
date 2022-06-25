@@ -9,9 +9,7 @@ import TSI from "../assets/icons/typescript.png";
 import ReduxI from "../assets/icons/redux.png";
 import CSSI from "../assets/icons/css.png";
 import HtmlI from "../assets/icons/html5.png";
-// @ts-ignore
-import Zoom from "react-reveal/Zoom";
-
+const Zoom = require("react-reveal/Zoom");
 
 const Skills = () => {
     let descriptionJS = "Здесь будет описание скилла по JS";
