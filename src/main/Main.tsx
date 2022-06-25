@@ -2,6 +2,7 @@ import React from 'react';
 import style from "./Main.module.scss";
 import stylesContainer from "../common/styles/Container.module.scss";
 import TsParticles from "../common/components/TsParticles";
+import ReactTypingEffect from 'react-typing-effect';
 
 
 const Main = () => {
@@ -11,9 +12,9 @@ const Main = () => {
             <TsParticles/>
             <div className={stylesContainer.container}>
                 <div className={style.mainText}>
-                    <span>Hi,</span>
-                    <h1>I am Dzmitry Karas</h1>
-                    <p>Frontend Developer</p>
+                    <h4>Hello,</h4>
+                    <h1 className={style.root}>I'm Dzmitry Karas</h1>
+                    <h4><ReactTypingEffect text={"Frontend Developer"}/></h4>
                 </div>
                 <div className={style.mainPhoto}>
                 </div>

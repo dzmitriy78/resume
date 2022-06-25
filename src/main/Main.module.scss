@@ -10,6 +10,10 @@
     background-color: $bgColor2;
     border: 1px solid;
     color: $textColor;
+
+    .root {
+      color: $primaryColor;
+    }
   }
 
   .mainPhoto {
