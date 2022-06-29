@@ -3,4 +3,14 @@
 .App {
   text-align: center;
   font-family: $fontFive;
+
+  // для задания чредующихся стилей
+ /* > div {
+    &:nth-child(n){
+      background-color: $bgColor1;
+    }
+    &:nth-child(n+1){
+      background-color: $bgColor2;
+    }
+  }*/
 }

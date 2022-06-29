@@ -2,13 +2,10 @@
 
 .skillsBlock {
   background-color: $bgColor1;
-
   .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
-
     .skills {
-
       border: 1px $bgColor1 solid;
       color: $primaryColor;
       width: 100%;
