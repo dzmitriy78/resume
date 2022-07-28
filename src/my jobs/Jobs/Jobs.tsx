@@ -4,23 +4,22 @@ import styles from "./Jobs.module.scss";
 interface JobsPropsType {
     title: string
     description: string
-    style:  any
+    style: { backgroundImage: string }
+    button: () => void
+    referral: string
 }
 
 const Jobs = (props: JobsPropsType) => {
 
-    const gotoSocial = ()=>{
-        document.location='https://dzmitriy78.github.io/social-js'
-    }
-
     return (
         <div className={styles.job}>
             <div className={styles.icon} style={props.style}>
-                <button className={styles.button} onClick={gotoSocial}>Смотреть</button>
+                <button className={styles.button} onClick={props.button}>Смотреть</button>
             </div>
             <h3 className={styles.jobsTitle}>{props.title}</h3>
             <span className={styles.jobDescription}>
                 {props.description}
+                <p>Код <a href={props.referral}>здесь</a></p>
             </span>
         </div>
     );

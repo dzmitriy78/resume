@@ -22,11 +22,14 @@
       height: 40px;
       flex-direction: row;
       justify-content: space-between;
-      cursor: pointer;
 
       & a {
         text-decoration: none;
         color: $primaryColor;
+        cursor: pointer;
+      }
+      & span {
+        cursor: pointer;
       }
     }
 

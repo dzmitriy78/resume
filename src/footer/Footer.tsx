@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className={styles.footer}>
                     <a className={"pi pi-phone"} title={"tel:+375293417955"} href={"tel:+375293417955"}></a>
                     <a className={"pi pi-google"} title={"dzmitriy1978@gmail.com"} href="mailto:dzmitriy1978@gmail.com"></a>
-                    <span className={"pi pi-telegram"} title={"t.me/dzmitriy78"} onClick={gotoTelegram}></span>
+                    <span className={"pi pi-telegram"} title={"telegram"} onClick={gotoTelegram}></span>
                     <span className={"pi pi-github"} title={"Github"} onClick={gotoGH}></span>
                 </div>
                 <div className={styles.end}>All Rights Reserved.</div>

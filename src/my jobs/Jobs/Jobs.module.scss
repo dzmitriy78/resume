@@ -60,5 +60,10 @@
     font-family: $fontFour;
     font-size: 20px;
     letter-spacing: 1px;
+
+    & a {
+      color: $textColor;
+      text-decoration: none;
+    }
   }
 }
