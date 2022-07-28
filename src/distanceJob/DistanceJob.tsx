@@ -2,6 +2,7 @@ import React from 'react';
 import styles from "./DistanceJob.module.scss"
 import stylesContainer from "../common/styles/Container.module.scss"
 import ReactTypingEffect from 'react-typing-effect';
+import {gotoTelegram} from "../footer/Footer";
 
 const Fade = require("react-reveal/Fade")
 
@@ -15,7 +16,7 @@ const DistanceJob = () => {
                                            speed={100}
                                            eraseSpeed={50}/>
                     </h2>
-                    <button className={styles.btn}>Нанять меня</button>
+                    <button className={styles.btn} onClick={gotoTelegram}>Нанять меня</button>
                 </div>
             </Fade>
         </div>
