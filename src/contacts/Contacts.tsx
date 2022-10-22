@@ -4,7 +4,7 @@ import stylesContainer from "../common/styles/Container.module.scss";
 import Title from "../common/components/title/Title";
 import ContactsForm from "../common/components/form/ContactsForm"
 
-const Contacts = () => {
+const Contacts: React.FC = () => {
     return <div className={styles.contactsBlock}>
             <div className={`${stylesContainer.container} ${styles.contactsContainer}`}>
                 <Title title={"contacts"}/>

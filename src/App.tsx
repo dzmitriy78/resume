@@ -11,7 +11,6 @@ import {Layout} from "./common/components/Layout";
 function App() {
     return (
         <div className="App">
-
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<HomePage/>}/>

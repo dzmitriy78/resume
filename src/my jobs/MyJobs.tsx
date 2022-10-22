@@ -9,17 +9,17 @@ import project_2 from "../assets/icons/project-3.jpg"
 
 const Fade = require("react-reveal/Fade");
 
-const MyJobs = () => {
+const MyJobs: React.FC = () => {
     let descriptionSNJS = "Социальная сеть на JavaScript"
     let descriptionSNTS = "Социальная сеть на TypeScript";
-    let descriptionAJ = "Здесь будет описание работы по another job";
+    let descriptionCards = "Программа обучения по карточкам";
     let socialOnJS = {
         backgroundImage: `url(${socialNetwork})`
     }
     let socialOnTS = {
         backgroundImage: `url(${project_2})`
     }
-    let another = {
+    let cards = {
         backgroundImage: `url(${project_1})`
     }
 
@@ -32,10 +32,10 @@ const MyJobs = () => {
         document.location = 'https://dzmitriy78.github.io/social-network-ts'
     }
     const refToSocialTS = "https://github.com/dzmitriy78/social-network-ts"
-    const gotoAnother = () => {
-
+    const gotoCards = () => {
+        document.location = "https://dzmitriy78.github.io/cards_RTK"
     }
-    const refToAnother = ""
+    const refToCards = "https://github.com/dzmitriy78/cards_RTK"
 
 
     return (
@@ -44,26 +44,27 @@ const MyJobs = () => {
                 <div className={`${stylesContainer.container} ${styles.myJobsContainer}`}>
                     <Title title={"Projects"}/>
                     <div className={styles.jobs}>
-                        <Jobs title={"social network on JS"}
-                              description={descriptionSNJS}
-                              style={socialOnJS}
-                              button={gotoSocialOnJs}
-                              referral={refToSocialJS}/>
+
                         <Jobs title={"social network on TS"}
                               description={descriptionSNTS}
                               style={socialOnTS}
                               button={gotoSocialOnTs}
                               referral={refToSocialTS}/>
-                        <Jobs title={"another job"}
-                              description={descriptionAJ}
-                              style={another}
-                              button={gotoAnother}
-                              referral={refToAnother}/>
+                        <Jobs title={"card learning"}
+                              description={descriptionCards}
+                              style={cards}
+                              button={gotoCards}
+                              referral={refToCards}/>
+                        <Jobs title={"social network on JS"}
+                              description={descriptionSNJS}
+                              style={socialOnJS}
+                              button={gotoSocialOnJs}
+                              referral={refToSocialJS}/>
                     </div>
                 </div>
             </Fade>
         </div>
-    );
-};
+    )
+}
 
 export default MyJobs;
