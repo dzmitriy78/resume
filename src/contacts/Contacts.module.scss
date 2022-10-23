@@ -2,10 +2,20 @@
 
 .contactsBlock {
   background-color: $bgColor2;
-  height: 100vh;
+  min-height: 78vh;
+
   .contactsContainer {
     flex-direction: column;
     justify-content: flex-start;
+
+    .description {
+      margin-bottom: 30px;
+      font-family: $fontSecond;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 4px;
+      color: $textColor;
+    }
 
     .form {
       width: 40%;

@@ -4,13 +4,13 @@ import styles from "./Title.module.scss"
 interface TitlePropsType {
     title: string
 }
-const Title = (props: TitlePropsType) => {
+const Title: React.FC<TitlePropsType> = ({title}) => {
 
     return (
                 <div className={styles.title}>
-                    <h2>{props.title}</h2>
+                    <h2>{title}</h2>
                 </div>
-    );
-};
+    )
+}
 
 export default Title;

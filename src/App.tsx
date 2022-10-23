@@ -5,15 +5,16 @@ import MyJobs from "./my jobs/MyJobs";
 import DistanceJob from "./distanceJob/DistanceJob";
 import Contacts from "./contacts/Contacts";
 import {Route, Routes} from "react-router-dom";
-import HomePage from "./common/components/HomePage";
 import {Layout} from "./common/components/Layout";
+import Main from "./main/Main";
 
-function App() {
+const App: React.FC = () => {
     return (
         <div className="App">
+
             <Routes>
                 <Route path="/" element={<Layout/>}>
-                    <Route index element={<HomePage/>}/>
+                    <Route path="main" element={<Main/>}/>
                     <Route path="skills" element={<Skills/>}/>
                     <Route path="projects" element={<MyJobs/>}/>
                     <Route path="distanceJob" element={<DistanceJob/>}/>
@@ -25,9 +26,8 @@ function App() {
                     }/>
                 </Route>
             </Routes>
-
         </div>
-    );
+    )
 }
 
 export default App;

@@ -6,7 +6,7 @@ import {gotoTelegram} from "../footer/Footer";
 
 const Fade = require("react-reveal/Fade")
 
-const DistanceJob = () => {
+const DistanceJob: React.FC = () => {
     return (
         <div className={styles.block}>
             <Fade right big>

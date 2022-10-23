@@ -2,6 +2,7 @@
 
 .skillsBlock {
   background-color: $bgColor1;
+  min-height: 78vh;
   .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;

@@ -5,9 +5,14 @@ import TsParticles from "../common/components/TsParticles";
 import ReactTypingEffect from 'react-typing-effect';
 import rootPhoto from "./../assets/images/rootPhoto.jpg"
 import ReactParallaxTilt from "react-parallax-tilt";
+import Skills from "../skills/Skills";
+import MyJobs from "../my jobs/MyJobs";
+import DistanceJob from "../distanceJob/DistanceJob";
+import Contacts from "../contacts/Contacts";
+import Footer from "../footer/Footer";
 
 
-const Main = () => {
+const Main: React.FC = () => {
 
     return (
         <div className={style.mainBlock}>
@@ -26,8 +31,13 @@ const Main = () => {
                 </div>
                 </ReactParallaxTilt>
             </div>
+            <Skills/>
+            <MyJobs/>
+            <DistanceJob/>
+            <Contacts/>
+            <Footer/>
         </div>
-    );
-};
+    )
+}
 
 export default Main;

@@ -2,23 +2,25 @@
 
 .footerBlock {
   background-color: $bgColor1;
+  height: 15vh;
 
   .footerContainer {
     flex-direction: column;
     justify-content: center;
-
+    flex-wrap: nowrap;
     .title {
       color: $textColor;
       font-size: 14px;
+
     }
 
     .footer {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       background-color: $bgColor1;
       color: $primaryColor;
-      width: 300px;
+      width: 30%;
       height: 40px;
       flex-direction: row;
       justify-content: space-between;
@@ -28,9 +30,7 @@
         color: $primaryColor;
         cursor: pointer;
       }
-      & span {
-        cursor: pointer;
-      }
+
     }
 
     .end {
