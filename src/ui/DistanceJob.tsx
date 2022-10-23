@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from "./DistanceJob.module.scss"
+import styles from "../common/styles/DistanceJob.module.scss"
 import stylesContainer from "../common/styles/Container.module.scss"
 import ReactTypingEffect from 'react-typing-effect';
-import {gotoTelegram} from "../footer/Footer";
+import {gotoTelegram} from "./Footer";
 
 const Fade = require("react-reveal/Fade")
 

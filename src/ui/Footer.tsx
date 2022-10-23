@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Footer.module.scss"
+import styles from "../common/styles/Footer.module.scss"
 import stylesContainer from "../common/styles/Container.module.scss";
 import 'primeicons/primeicons.css';
 

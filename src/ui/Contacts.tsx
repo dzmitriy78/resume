@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from "./Contacts.module.scss"
+import styles from "../common/styles/Contacts.module.scss"
 import stylesContainer from "../common/styles/Container.module.scss";
-import Title from "../common/components/title/Title";
-import ContactsForm from "../common/components/form/ContactsForm"
+import Title from "../common/components/Title";
+import ContactsForm from "../common/components/ContactsForm"
 
 const Contacts: React.FC = () => {
     return (

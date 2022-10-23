@@ -1,9 +1,9 @@
-@import "../common/styles/sass/variables";
+@import "variables/variables";
 
 .block {
   height: 78vh;
   background-color: $bgColor1;
-  background-image: url(../assets/images/Udalennaya-rabota.jpg);
+  background-image: url(../../assets/images/Udalennaya-rabota.jpg);
 
   .DJContainer {
     flex-direction: column;

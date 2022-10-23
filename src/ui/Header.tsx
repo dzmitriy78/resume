@@ -1,6 +1,6 @@
 import React from 'react';
-import style from "./Header.module.scss";
-import Nav from "../nav/Nav";
+import style from "../common/styles/Header.module.scss";
+import Nav from "./Nav";
 
 const Header: React.FC = () => {
     return (

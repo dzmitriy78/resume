@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Jobs.module.scss";
+import styles from "../common/styles/Jobs.module.scss";
 
 interface JobsPropsType {
     title: string

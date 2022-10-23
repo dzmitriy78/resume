@@ -1,21 +1,30 @@
-@import "../common/styles/sass/variables";
+@import "variables/variables";
 
-.skillsBlock {
-  background-color: $bgColor1;
-  min-height: 78vh;
-  .skillsContainer {
+.myJobsBlock {
+  background-color: $bgColor2;
+
+  .myJobsContainer {
     flex-direction: column;
     justify-content: flex-start;
-    .skills {
+    flex-wrap: nowrap;
+
+    .jobs {
       border: 1px $bgColor1 solid;
-      color: $primaryColor;
       width: 100%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      font-family: $fontThree;
+      font-size: 25px;
+      align-items: flex-start;
       @media screen and (max-width: 624px) {
         justify-content: center;
       }
     }
   }
 }
+
+
+
+
+

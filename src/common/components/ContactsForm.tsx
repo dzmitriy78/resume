@@ -1,10 +1,10 @@
 import {useFormik} from 'formik';
 import React, {useRef, useState} from 'react';
-import styles from "./../../../contacts/Contacts.module.scss"
+import styles from "../styles/Contacts.module.scss"
 import emailjs from "@emailjs/browser";
 import {InputTextarea} from "primereact/inputtextarea";
 import {InputText} from 'primereact/inputtext';
-import Message from "../Message";
+import Message from "./Message";
 
 type FormikErrorType = {
     user_email?: string

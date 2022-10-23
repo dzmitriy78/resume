@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.scss';
-import Skills from "./skills/Skills";
-import MyJobs from "./my jobs/MyJobs";
-import DistanceJob from "./distanceJob/DistanceJob";
-import Contacts from "./contacts/Contacts";
-import {Route, Routes} from "react-router-dom";
+import './common/styles/App.scss';
+import Skills from "./ui/Skills";
+import MyJobs from "./ui/MyJobs";
+import DistanceJob from "./ui/DistanceJob";
+import Contacts from "./ui/Contacts";
+import {Navigate, Route, Routes} from "react-router-dom";
 import {Layout} from "./common/components/Layout";
-import Main from "./main/Main";
+import Main from "./ui/Main";
 
 const App: React.FC = () => {
     return (
@@ -14,6 +14,7 @@ const App: React.FC = () => {
 
             <Routes>
                 <Route path="/" element={<Layout/>}>
+                    <Route index element={<Navigate to={"main"}/>}/>
                     <Route path="main" element={<Main/>}/>
                     <Route path="skills" element={<Skills/>}/>
                     <Route path="projects" element={<MyJobs/>}/>
