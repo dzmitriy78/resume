@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/resume/static/css/main.4d185c04.css",
+    "main.js": "/resume/static/js/main.fff31fb8.js",
+    "static/js/496.ac6f1819.chunk.js": "/resume/static/js/496.ac6f1819.chunk.js",
+    "static/media/primeicons.svg": "/resume/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/Udalennaya-rabota.jpg": "/resume/static/media/Udalennaya-rabota.36313271625fe8461bf2.jpg",
+    "static/media/project-1.jpg": "/resume/static/media/project-1.3c0de37c7e9969b94e02.jpg",
+    "static/media/primeicons.eot": "/resume/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/resume/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/resume/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/project-2.jpg": "/resume/static/media/project-2.08f5f66c27100bde66e9.jpg",
+    "static/media/GothamPro.eot": "/resume/static/media/GothamPro.8c7017f6ea2ebb9bdd79.eot",
+    "static/media/GothamPro-Medium.ttf": "/resume/static/media/GothamPro-Medium.dca4b95d345c2abd8661.ttf",
+    "static/media/Sochi2014-Bold.eot": "/resume/static/media/Sochi2014-Bold.8eb912c99f4504c2d01c.eot",
+    "static/media/Sochi2014-Bold.ttf": "/resume/static/media/Sochi2014-Bold.f64458f585d1094328cc.ttf",
+    "static/media/Sochi2014-Medium.eot": "/resume/static/media/Sochi2014-Medium.6dc49a0f8d449c7af7a6.eot",
+    "static/media/Sochi2014-Medium.ttf": "/resume/static/media/Sochi2014-Medium.67c28424595b38aad9ed.ttf",
+    "static/media/rootPhoto.jpg": "/resume/static/media/rootPhoto.e55702d6453886b9f145.jpg",
+    "static/media/project-3.jpg": "/resume/static/media/project-3.0dbdb71e6acfbfb28496.jpg",
+    "static/media/primeicons.woff2": "/resume/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "static/media/GothamPro-Medium.woff": "/resume/static/media/GothamPro-Medium.48d4d0401d4bd02b35a6.woff",
+    "static/media/Sochi2014-Bold.woff": "/resume/static/media/Sochi2014-Bold.6c4f0df20c4e8785f76c.woff",
+    "static/media/Sochi2014-Medium.woff": "/resume/static/media/Sochi2014-Medium.64406d2cc43f1aa13075.woff",
+    "index.html": "/resume/index.html",
+    "main.4d185c04.css.map": "/resume/static/css/main.4d185c04.css.map",
+    "main.fff31fb8.js.map": "/resume/static/js/main.fff31fb8.js.map",
+    "496.ac6f1819.chunk.js.map": "/resume/static/js/496.ac6f1819.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d185c04.css",
+    "static/js/main.fff31fb8.js"
+  ]
+}
