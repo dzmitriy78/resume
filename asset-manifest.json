@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.b902f63d.css",
-    "main.js": "/resume/static/js/main.fff31fb8.js",
+    "main.css": "/resume/static/css/main.22068ae5.css",
+    "main.js": "/resume/static/js/main.07bfe4ad.js",
     "static/js/496.ac6f1819.chunk.js": "/resume/static/js/496.ac6f1819.chunk.js",
     "static/media/primeicons.svg": "/resume/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/Udalennaya-rabota.jpg": "/resume/static/media/Udalennaya-rabota.36313271625fe8461bf2.jpg",
@@ -23,12 +23,12 @@
     "static/media/Sochi2014-Bold.woff": "/resume/static/media/Sochi2014-Bold.6c4f0df20c4e8785f76c.woff",
     "static/media/Sochi2014-Medium.woff": "/resume/static/media/Sochi2014-Medium.64406d2cc43f1aa13075.woff",
     "index.html": "/resume/index.html",
-    "main.b902f63d.css.map": "/resume/static/css/main.b902f63d.css.map",
-    "main.fff31fb8.js.map": "/resume/static/js/main.fff31fb8.js.map",
+    "main.22068ae5.css.map": "/resume/static/css/main.22068ae5.css.map",
+    "main.07bfe4ad.js.map": "/resume/static/js/main.07bfe4ad.js.map",
     "496.ac6f1819.chunk.js.map": "/resume/static/js/496.ac6f1819.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b902f63d.css",
-    "static/js/main.fff31fb8.js"
+    "static/css/main.22068ae5.css",
+    "static/js/main.07bfe4ad.js"
   ]
 }
