@@ -1,7 +1,7 @@
 @import "variables/variables";
 
 .mainBlock {
-  height: 100vh;
+  height: 115vh;
   background-color: $bgColor2;
   position: relative;
 
@@ -12,6 +12,7 @@
 
   .mainText {
     width: 400px;
+    height: 330px;
     margin-left: 50px;
     background-color: $bgColor2;
     font-family: $fontThree;
